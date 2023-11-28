@@ -15,7 +15,7 @@ function App() {
           <div>
             <div className="ondulado"></div>
             <div className="section bg-secundary">
-              {/* <h2 className="names"></h2> */}
+             <h2 className="names">Cris & Caro</h2>
               <p className="names_subtitle">
                 Nos llena de alegría que nos acompañes en este día tan
                 significativo. Tu presencia hará que nuestra boda sea aún más

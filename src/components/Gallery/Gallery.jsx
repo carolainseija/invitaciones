@@ -5,14 +5,14 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import { Pagination, EffectCoverflow } from "swiper/modules";
 
-import foto from "../../assets/imagen2.jpg";
-import foto1 from "../../assets/imagen.jpg";
-import foto2 from "../../assets/imagen2.jpg";
-import foto3 from "../../assets/imagen.jpg";
-// import foto4 from "../../assets/ceremonia.jpg";
-import foto5 from "../../assets/imagen.jpg";
-import foto6 from "../../assets/imagen2.jpg";
-import foto7 from "../../assets/imagen.jpg";
+import foto from "../../assets/fotos/3.jpg";
+import foto1 from "../../assets/fotos/3.jpg";
+import foto2 from "../../assets/fotos/3.jpg";
+import foto3 from "../../assets/fotos/3.jpg";
+import foto4 from "../../assets/fotos/3.jpg";
+import foto5 from "../../assets/fotos/3.jpg";
+import foto6 from "../../assets/fotos/3.jpg";
+import foto7 from "../../assets/fotos/3.jpg";
 
 import "./styles.css";
 
@@ -71,25 +71,25 @@ export default function Gallery() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={foto2} />
-        </SwiperSlide>
-        <SwiperSlide>
           <img src={foto} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={foto2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={foto} />
+          <img src={foto1} />
         </SwiperSlide>
         <SwiperSlide>
           <img src={foto2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={foto} />
+          <img src={foto3} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={foto2} />
+          <img src={foto4} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={foto5} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={foto6} />
         </SwiperSlide>
       </Swiper>
       {openModalImage === true && (
