@@ -1,5 +1,5 @@
 import { Card, Col, Row } from "antd";
-import dress from "../../assets/dress.png";
+import dress from "../../assets/dress-code.png";
 import "../../App.css"
 
 export default function ContentCard() {
