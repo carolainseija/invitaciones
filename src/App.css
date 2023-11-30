@@ -306,12 +306,19 @@ padding: 0px;
 
 
 @media screen and (max-width: 360px) {
- 
+
   .ondulado-header {
     height: 100px;
     margin-top: -200px;
   }
-
-
-
 }
+
+
+
+@media screen and (max-width: 280px) {
+   .ondulado-header {
+     height: 50px;
+     margin-top: -200px;
+   }
+
+ }
