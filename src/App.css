@@ -303,3 +303,15 @@ padding: 0px;
     margin-bottom: 100px;
   }
 }
+
+
+@media screen and (max-width: 360px) {
+ 
+  .ondulado-header {
+    height: 100px;
+    margin-top: -200px;
+  }
+
+
+
+}
