@@ -231,6 +231,9 @@ padding: 0px;
 .modal input {
   height: 40px;
   margin: 5px;
+  border: 1px solid;
+  font-size: 20px;
+  border-radius: 5px;
 }
 
 .modal-content {
@@ -244,12 +247,16 @@ padding: 0px;
   flex-direction: column;
 }
 
+
 .modal button {
   margin: 5px;
   padding: 8px 16px;
   cursor: pointer;
   background-color: #c88421;
   color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
 }
 
 
@@ -280,6 +287,8 @@ padding: 0px;
   }
   .names_subtitle {
     width: 70%;
+    padding: 15px 0px;
+    font-size: 22px;
   }
 .bg-secundary {
   padding: 0px;

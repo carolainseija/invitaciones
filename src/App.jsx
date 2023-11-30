@@ -26,8 +26,35 @@ const ConfirmacionAsistenciaModal = ({ isOpen, onClose, onConfirmar }) => {
     </div>
   );
 };
+
+const DressCodeModal = ({ isOpen, onClose, onConfirmar }) => {
+  return (
+    <div className={`modal ${isOpen ? 'open' : ''}`}>
+      <div className="modal-content">
+        <h2>Dress Code</h2>
+        <p>FORMAL</p>
+        <p>Estamos seguros de que todos lucirán espectaculares.</p>
+        
+        {/* <button onClick={onConfirmar}>Visto</button> */}
+        <button onClick={onClose}>Cerrar</button>
+      </div>
+    </div>
+  );
+};
 function App() {
 
+
+
+  const [dressModalIsOpen, setDressModalIsOpen] = useState(false);
+
+  const handleAbrirDressModal = () => {
+    setDressModalIsOpen(true);
+  };
+
+  const handleCerrarDressModal = () => {
+    setDressModalIsOpen(false);
+  };
+  
 
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -45,6 +72,13 @@ function App() {
     // También puedes cerrar el modal después de confirmar.
     handleCerrarModal();
   };
+
+  const handleDressCode = () => {
+    // Lógica para confirmar la asistencia, por ejemplo, enviar una solicitud al servidor.
+    // También puedes cerrar el modal después de confirmar.
+    handleCerrarDressModal();
+  };
+
   return (
     <>
       <div className="header"></div>
@@ -55,6 +89,11 @@ function App() {
         onClose={handleCerrarModal}
         onConfirmar={handleConfirmarAsistencia}
       />
+       <DressCodeModal
+        isOpen={dressModalIsOpen}
+        onClose={handleCerrarDressModal}
+        onConfirmar={handleDressCode}
+      />
         <div className="content_home">
           <div>
             <div className="ondulado-header"></div>
@@ -62,7 +101,10 @@ function App() {
               <h2 className="names">Cris & Caro</h2>
               <p className="names_subtitle">
                 Nos llena de alegría que nos acompañes en este día tan
-                significativo. Tu presencia hará que nuestra boda sea aún más
+                significativo. 
+              </p>
+              <p className="names_subtitle">
+                Tu presencia hará que nuestra boda sea aún más
                 memorable.
               </p>
             </div>
@@ -72,7 +114,7 @@ function App() {
             <ContentHome handleAbrirModal={handleAbrirModal} />
             <div className="ondulado"></div>
             <div className="section bg-secundary">
-              <ContentCard />{" "}
+              <ContentCard handleAbrirDressModal={handleAbrirDressModal} />{" "}
             </div>
             <div className="ondulado_down"></div>
           </div>
@@ -82,8 +124,11 @@ function App() {
             <div className="ondulado"></div>
             <div className="section bg-secundary">
               <p className="names_subtitle">
-                Les informamos que la fecha límite para confirmar su asistencia
-                a nuestra ceremonia es el 10 de diciembre. Agradecemos su pronta
+                La fecha límite para confirmar tú asistencia
+                a nuestra ceremonia es el 10 de diciembre.
+              </p>
+              <p className="names_subtitle">
+                Agradecemos su pronta
                 respuesta para preparar todo y compartir este día especial
                 juntos.
               </p>

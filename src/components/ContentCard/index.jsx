@@ -2,7 +2,7 @@ import { Card, Col, Row } from "antd";
 import dress from "../../assets/dress-code.png";
 import "../../App.css"
 
-export default function ContentCard() {
+export default function ContentCard({ handleAbrirDressModal }) {
 
   return (
     <div className="contenidos">
@@ -14,7 +14,7 @@ export default function ContentCard() {
             title="Código de vestimenta"
             cover={<img alt="example" className="icon" style={{ width: "90px", height: "auto", margin: "0px auto"}} src={dress} />}
           >
-            <button className="button-more">Ver más</button>
+            <button className="button-more" onClick={handleAbrirDressModal}>Ver más</button>
           </Card>
         </Col>
       </Row>

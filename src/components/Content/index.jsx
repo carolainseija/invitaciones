@@ -13,12 +13,12 @@ export default function ContentHome({ handleAbrirModal }) {
             <img src={civil} />
             <p className="title">Civil</p>
             <p className="subtitle">Día</p>
-            <p className="subtitle2">Sábado 15 de Mayo - 17hs</p>
+            <p className="subtitle2">Jueves 11 de Enero - 14hs</p>
             <p className="subtitle">Lugar</p>
-            <p className="subtitle2">Parroquia Nuestra Señora de Lujan</p>
+            <p className="subtitle2">Registro Civil</p>
             <button className="button-confirm" onClick={handleAbrirModal}>Confirmar asistencia</button>
             <p className="subtitle">Dirección</p>
-            <p className="subtitle2">Parroquia Nuestra Señora de Lujan</p>
+            <p className="subtitle2">Sarandí 428, Montevideo.</p>
             <button className="button-confirm">¿Cómo llegar?</button>
           </Flex>
         </Col>
@@ -29,10 +29,10 @@ export default function ContentHome({ handleAbrirModal }) {
             <p className="subtitle">Día</p>
             <p className="subtitle2">Sábado 15 de Mayo - 17hs</p>
             <p className="subtitle">Lugar</p>
-            <p className="subtitle2">Parroquia Nuestra Señora de Lujan</p>
+            <p className="subtitle2">Chacra: "La encontrada"</p>
             <button className="button-confirm" onClick={handleAbrirModal}>Confirmar asistencia</button>
             <p className="subtitle">Dirección</p>
-            <p className="subtitle2">Parroquia Nuestra Señora de Lujan</p>
+            <p className="subtitle2">Camino Zendote 3929, Montevideo.</p>
             <button className="button-confirm">¿Cómo llegar?</button>
           </Flex>
         </Col>
